@@ -1,1 +1,48 @@
 @import "tailwindcss";
+
+@theme {
+  --color-primary-green: rgba(17, 203, 7, 1);
+  --color-secondary-grey: rgba(28, 33, 28, 1);
+  --color-primary-grey: rgba(15, 19, 15, 1)
+}
+
+@layer components {
+  .text-primary-green {
+    color: var(--color-primary-green);
+  }
+  .bg-primary-green {
+    background-color: var(--color-primary-green);
+  }
+  .border-primary-green {
+    border-color: var(--color-primary-green);
+  }
+  .ring-primary-green {
+    --tw-ring-color: var(--color-primary-green);
+  }
+
+  .text-secondary-grey {
+    color: var(--color-secondary-grey);
+  }
+  .bg-secondary-grey {
+    background-color: var(--color-secondary-grey);
+  }
+  .border-secondary-grey {
+    border-color: var(--color-secondary-grey);
+  }
+  .ring-secondary-grey {
+    --tw-ring-color: var(--color-secondary-grey);
+  }
+
+  .text-primary-grey {
+    color: var(--color-primary-grey);
+  }
+  .bg-primary-grey {
+    background-color: var(--color-primary-grey);
+  }
+  .border-primary-grey {
+    border-color: var(--color-primary-grey);
+  }
+  .ring-primary-grey {
+    --tw-ring-color: var(--color-primary-grey);
+  }
+}
