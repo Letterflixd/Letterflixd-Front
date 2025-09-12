@@ -11,7 +11,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />}/>
       <Route path="/404" element={<_404/>}/>
-      <Route index element={<Navigate to="/404" />}/>
+      <Route path ="*" element={<Navigate to="/404" />}/>
     </Routes>
     </>
   )
