@@ -1,6 +1,6 @@
 import { Routes, Route, useLocation } from "react-router-dom";
 import { useState } from 'react'
-import { Test } from "./pages/test";
+import { Home } from "./pages/Home";
 import Navbar from "./components/Navbar";
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
     <>
     <Navbar/>
     <Routes>
-      <Route path="/" element={<Test />}/>
+      <Route path="/" element={<Home />}/>
     </Routes>
     </>
   )
