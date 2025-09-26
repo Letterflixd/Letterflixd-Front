@@ -8,9 +8,6 @@ export default function Navbar() {
               <div class="w-10 h-10 bg-bleu-light-citef rounded-lg flex items-center justify-center">
                 <img src="/images/logoverttext.svg" class="w-10 h-10" alt="Letterflixd" />
               </div>
-              <div>
-                <span class="text-xl text-primary-green font-bold">Letterflixd / NetFlop</span>
-              </div>
             </div>
           </div>
 
