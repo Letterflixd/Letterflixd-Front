@@ -3,7 +3,7 @@ export function Details() {
     title: "00,,0",
     cover_image: "./mock.jpeg",
     duration: "5 hours",
-    description: "Le film narre les aventures érotiques de Yannick, jeune ouvrier dans la compote, rencontrant Bernard, patron d'Andros. Timide et prude, Yannick découvrira petit à petit une nouvelle facette de lui même sous la main tendre mais rude de Bernard.",
+    description: "Le film narre les aventures érotiques de Yannick, jeune ouvrier dans la compote, rencontrant Bernard, patron d'Andros. Timide et prude, Yannick découvrira petit à petit une nouvelle facette de lui même sous la main tendre mais rude de Bernard, pourtant peu coutumier de la vie à la dure. Yannick découvrira un nouvel univers dans lequel il hésitera à entrer, tel une pucelle qui voit son mari rentrer de la guerre.",
     director: "Saïd Fettahi",
     cast: ["Yaniss dans le rôle de Yannick", "Azario dans le rôle de Bernard"],
     age_restriction: 45,
