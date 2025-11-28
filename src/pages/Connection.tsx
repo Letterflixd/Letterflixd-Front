@@ -1,22 +1,8 @@
 import React from 'react';
-import logo from '../assets/logo.png';
-
-const Header: React.FC = () => (
-    <header className={"header"}>
-        <div className={"logo-container"}>
-            <img src={logo} alt="Netflop Logo" className="netflop-logo"/>
-        </div>
-        <div className={"nav-buttons"}>
-            <button className={"btn-identification"}>Retour</button>
-            <button className={"btn-connexion"}>Se connecter</button>
-        </div>
-    </header>
-);
 
 export const Connection: React.FC = () => {
     return (
         <div className={"connection-container"}>
-            <Header/>
 
             <main className={"connect-section"}>
                 <div className="login-card">
