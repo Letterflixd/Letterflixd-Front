@@ -3,7 +3,7 @@ export function Details() {
     title: "00,,0",
     cover_image: "./mock.jpeg",
     duration: "5 hours",
-    description: "Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la mise en page est achevée. Généralement, on utilise un texte en faux latin, le Lorem ipsum ou Lipsum.",
+    description: "Yaniss habite au 21 Rue Fustel de Coulanges, Limoges 87000.",
     director: "Saïd Fettahi",
     cast: ["Gab", "Gaëtan", "Azario"],
     age_restriction: 45,
