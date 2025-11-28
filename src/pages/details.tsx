@@ -5,7 +5,7 @@ export function Details() {
     duration: "5 hours",
     description: "Le film narre les aventures érotiques de Yannick, jeune ouvrier dans la compote, rencontrant Bernard, patron d'Andros.",
     director: "Saïd Fettahi",
-    cast: ["Gab", "Gaëtan", "Azario"],
+    cast: ["Gaëtan", "Azario"],
     age_restriction: 45,
     categories: ["horror", "romance", "comedy"],
   }
