@@ -3,9 +3,9 @@ export function Details() {
     title: "00,,0",
     cover_image: "./mock.jpeg",
     duration: "5 hours",
-    description: "Le film narre les aventures érotiques de Yannick, jeune ouvrier dans la compote, rencontrant Bernard, patron d'Andros.",
+    description: "Le film narre les aventures érotiques de Yannick, jeune ouvrier dans la compote, rencontrant Bernard, patron d'Andros. Timide et prude, Yannick découvrira petit à petit une nouvelle facette de lui même sous la main tendre mais rude de Bernard.",
     director: "Saïd Fettahi",
-    cast: ["Gaëtan", "Azario"],
+    cast: ["Yaniss dans le rôle de Yannick", "Azario dans le rôle de Bernard"],
     age_restriction: 45,
     categories: ["horror", "romance", "comedy"],
   }
