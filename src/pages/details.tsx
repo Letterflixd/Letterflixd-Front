@@ -3,7 +3,7 @@ export function Details() {
     title: "00,,0",
     cover_image: "./mock.jpeg",
     duration: "5 hours",
-    description: "Yaniss habite au 21 Rue Fustel de Coulanges, Limoges 87000.",
+    description: "Le film narre les aventures érotiques de Yannick, jeune ouvrier dans la compote, rencontrant Bernard, patron d'Andros.",
     director: "Saïd Fettahi",
     cast: ["Gab", "Gaëtan", "Azario"],
     age_restriction: 45,
