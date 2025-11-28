@@ -1,22 +1,8 @@
 import React from 'react';
-import logo from '../assets/logo.png';
-
-const Header: React.FC = () => (
-    <header className={"header"}>
-        <div className={"logo-container"}>
-            <img src={logo} alt="Netflop Logo" className="netflop-logo"/>
-        </div>
-        <div className={"nav-buttons"}>
-            <button className={"btn-identification"}>S'identifier</button>
-            <button className={"btn-connexion"}>Se connecter</button>
-        </div>
-    </header>
-);
 
 export const Home: React.FC = () => {
     return (
         <div className={"home-container"}>
-            <Header/>
 
             <main className={"hero-section"}>
             <h1 className={"title"}>Films et séries en limité et pas bien plus</h1>
