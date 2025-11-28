@@ -45,4 +45,146 @@
   .ring-primary-grey {
     --tw-ring-color: var(--color-primary-grey);
   }
+
+  body {
+    background: linear-gradient(
+            to bottom,
+            #000000 0%,
+            #1d4b1d 80%,
+            #123412 100%
+    );
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+  }
+
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4CAF50;
+  }
+
+  .nav-buttons button {
+    margin-left: 10px;
+    padding: 8px 20px;
+    cursor: pointer;
+    border-radius: 20px 20px 20px 20px;
+    font-weight: 600;
+    transition: background-color 0.2s, border-color 0.2s;
+  }
+
+  .btn-identification {
+    background: none;
+    color: white;
+    padding: 7px 16px;
+    border: 1px solid #4CAF50;
+    border-radius: 4px;
+    font-weight: 600;
+  }
+
+  .btn-identification:hover {
+    border-color: #6dcc72;
+  }
+
+  .btn-connexion {
+    background-color: #11cf11;
+    color: black;
+
+  }
+  .btn-connexion:hover {
+    background-color: #6ccf6c;
+  }
+
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+    flex-grow: 1;
+    justify-content: center;
+  }
+
+  .title {
+    font-size: 3.5rem;
+    font-weight: 900;
+    max-width: 800px;
+    margin: 0 0 20px 0;
+  }
+
+  .sub-title {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin: 0 0 40px 0;
+  }
+
+  .cta-container {
+    max-width: 850px;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .cta-text {
+    margin-bottom: 15px;
+    font-size: 1.0rem;
+    color: #AAAAAA;
+  }
+
+  .email-form {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .email-input {
+    flex-grow: 1;
+    max-width: 450px;
+    padding: 15px;
+    font-size: 1rem;
+    border: #11cf11;
+    border-radius: 20px 20px 20px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: 1px solid #11cf11;
+    box-sizing: border-box;
+  }
+
+  .email-input::placeholder {
+    color: #aaa;
+  }
+
+  .btn-primary-cta {
+    background-color: #1dca1d;
+    color: white;
+    padding: 10px 30px;
+    margin-left: 2%;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px 20px 20px 20px;
+    transition: background-color 0.2s;
+    height: 56px;
+  }
+
+  .btn-primary-cta:hover {
+    background-color: #6dcc72;
+  }
 }
