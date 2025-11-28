@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import { _404 } from "./pages/_404";
 import { Details } from "./pages/details.tsx";
 import {Connection} from "./pages/Connection.tsx";
+import {Inscription} from "./pages/Inscription.tsx";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Route path="/details" element={<Details/>}/>
       <Route path ="*" element={<Navigate to="/404" />}/>
       <Route path="/connection" element={<Connection />}/>
+      <Route path="/inscription" element={<Inscription />}/>
     </Routes>
     </>
   )

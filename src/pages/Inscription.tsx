@@ -1,32 +1,28 @@
 import React from 'react';
-import logo from '../assets/logo.png';
 
-const Header: React.FC = () => (
-    <header className={"header"}>
-        <div className={"logo-container"}>
-            <img src={logo} alt="Netflop Logo" className="netflop-logo"/>
-        </div>
-        <div className={"nav-buttons"}>
-            <button className={"btn-identification"}>Retour</button>
-            <button className={"btn-connexion"}>Se connecter</button>
-        </div>
-    </header>
-);
-
-export const Connection: React.FC = () => {
+export const Inscription: React.FC = () => {
     return (
         <div className={"connection-container"}>
-            <Header/>
 
             <main className={"connect-section"}>
                 <div className="login-card">
 
-                    <h1 className={"login-title"}>Identifiez-vous</h1>
+                    <h1 className={"login-title"}>Création de compte</h1>
 
                     <form className={"login-form"}>
                         <input
                             type="text"
-                            placeholder="E-mail ou Numéro de téléphone"
+                            placeholder="Nom"
+                            className="input-field"
+                        />
+                        <input
+                            type="text"
+                            placeholder="Prénom"
+                            className="input-field"
+                        />
+                        <input
+                            type="text"
+                            placeholder="Pseudonyme"
                             className="input-field"
                         />
                         <input
@@ -34,15 +30,44 @@ export const Connection: React.FC = () => {
                             placeholder="Mot de passe"
                             className="input-field"
                         />
+                        <input
+                            type="password"
+                            placeholder="Confirmez votre mot de passe"
+                            className="input-field"
+                        />
+                        <input
+                            type="text"
+                            placeholder="Numéro de téléphone"
+                            className="input-field"
+                        />
+                        <input
+                            type="text"
+                            placeholder="Adresse miel"
+                            className="input-field"
+                        />
+                        <input
+                            type="text"
+                            placeholder="Pays"
+                            className="input-field"
+                        />
 
-                        <button type="submit" className={"btn-login-submit"}>M'identifier</button>
+                        <button type="submit" className={"btn-login-submit"}>Créer votre compte</button>
 
-                        <div className="login-help-row">
-                            <div className="remember-me">
-                                <input type="checkbox" id="remember" className="checkbox-input" defaultChecked />
-                                <label htmlFor="remember" className="remember-me-label">Se souvenir de moi</label>
+                        <div className="options-container">
+
+                            <div className="option-row">
+                                <input type="checkbox" id="promotions" className="checkbox-input" defaultChecked/>
+                                <label htmlFor="promotions" className="option-label">
+                                    Souhaitez-vous recevoir nos offres promotionnelles par mail ?
+                                </label>
                             </div>
-                            <a href="#" className="forgot-password-link">Mot de passe oublié ?</a>
+
+                            <div className="option-row">
+                                <input type="checkbox" id="cgu" className="checkbox-input" defaultChecked/>
+                                <label htmlFor="cgu" className="option-label">
+                                    Acceptez-vous les conditions générales d’utilisation ?
+                                </label>
+                            </div>
                         </div>
                     </form>
                 </div>

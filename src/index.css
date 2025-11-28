@@ -287,4 +287,8 @@
   .forgot-password-link:hover {
     text-decoration: underline;
   }
+
+  .option-row{
+    margin-bottom: 3%;
+  }
 }
