@@ -11,18 +11,18 @@ export function Details() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-black via-[#1d4b1d] to-[#123412]">*
+    <div className="min-h-screen bg-gradient-to-b from-black via-[#1d4b1d] to-[#123412]">
 
-      <div 
+      <div
         className="relative h-96 bg-cover bg-center"
         style={{ backgroundImage: `url(${mockmovie.cover_image})` }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm"></div>
-        
+
         <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black to-transparent">
           <div className="max-w-7xl mx-auto">
             <h1 className="text-4xl font-bold text-white mb-4">{mockmovie.title}</h1>
-            
+
             <div className="flex flex-wrap items-center gap-6 text-white mb-4">
               <span className="bg-primary-green text-secondary-grey px-3 py-1 rounded-full text-sm font-semibold">
                 {mockmovie.age_restriction}+
@@ -33,7 +33,7 @@ export function Details() {
 
             <div className="flex flex-wrap gap-2 mb-4">
               {mockmovie.categories.map((category, index) => (
-                <span 
+                <span
                   key={index}
                   className="border border-primary-green text-primary-green px-3 py-1 rounded-full text-sm"
                 >
@@ -47,7 +47,7 @@ export function Details() {
 
       <div className="max-w-7xl mx-auto px-8 py-8">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          
+
           <div className="lg:col-span-2">
             <section className="mb-8">
               <h2 className="text-2xl font-bold text-white mb-4">Synopsis</h2>

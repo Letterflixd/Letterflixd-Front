@@ -1,18 +1,29 @@
 import logo from '../assets/logo.png';
+import Nlogo from '../assets/Nlogo.png';
 
 
 import { useState } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 export default function Navbar() {
     const [isSearchVisible, setIsSearchVisible] = useState(false);
+    const location = useLocation();
+    const navigate = useNavigate();
 
     return (
         <header className={"header"}>
             <div className="left-section">
                 <div className={"logo-container"}>
-                    <img src={logo} alt="Netflop Logo" className="netflop-logo" onClick={() => window.location.href = "/"} />
+                    {location.pathname === "/" ? (
+                        <img src={logo} alt="Netflop Logo" className="netflop-logo" />
+                    ) : (
+                        <img src={Nlogo} alt="Netflop Logo" className="netflop-logo" />
+                    )}
                 </div>
 
+            </div>
+
+            <div className={"nav-buttons"}>
                 <div className={`search-container ${isSearchVisible ? 'active' : ''}`}>
                     {isSearchVisible && (
                         <input
@@ -29,11 +40,9 @@ export default function Navbar() {
                         </svg>
                     </button>
                 </div>
-            </div>
-
-            <div className={"nav-buttons"}>
-                <button className={"btn-identification"} onClick={() => window.location.href = "/inscription"}>Créer un compte</button>
-                <button className={"btn-connexion"} onClick={() => window.location.href = "/connection"}>Se connecter</button>
+                <button className={"btn-identification"} onClick={() => navigate("/accueilfilm")}>Accueil</button>
+                <button className={"btn-identification"} onClick={() => navigate("/inscription")}>Créer un compte</button>
+                <button className={"btn-connexion"} onClick={() => navigate("/connection")}>Se connecter</button>
             </div>
         </header>
     )
